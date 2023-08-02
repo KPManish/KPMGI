@@ -126,20 +126,28 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 80%;
-        margin: 0 auto;
+        width: 85%; /* Set the width of the links container to 80% of the page width */
+        margin: 0 auto; /* Center the links container horizontally */
+        overflow: hidden; 
       }
 
+      .link-box img {
+      max-width: 65px;
+      max-height: 35px;
+      margin-right: 10px;
+      overflow: hidden;}
+
       .link-box {
-        width: 70%;
-        height: 40%;
-        /* max-width: 300px; */
+        width: 80%; /* Set the width of the link boxes to 40% of the page width */
+        max-width: 250px; /* Decrease the maximum width for better mobile layout */
         margin: 10px;
+        height: 25px;
       }
 
       .link-box a {
-      font-size: 14px; /* Adjust the font size for link titles in the mobile view */
-    }
+        font-size: 14px; /* Adjust the font size for link titles in the mobile view */
+        font-family: 'Algerian', sans-serif; /* Change the font style for link titles */
+      }
     }
   </style>
 </head>
